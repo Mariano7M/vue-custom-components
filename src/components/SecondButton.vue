@@ -1,6 +1,6 @@
 <template>
-  <button @click="onClick()">
-    {{label}}
+  <button>
+    {{ label }}
   </button>
 </template>
 
@@ -11,18 +11,8 @@ export default {
     label: {
       type: String,
       require: true,
-      default: 'Second button'
-    }
+      default: 'Second button',
+    },
   },
-  setup() {
-    function onClick() {
-      console.log('on click from second button')
-    }
-    return {onClick}
-  }
 }
 </script>
-
-<style>
-
-</style>

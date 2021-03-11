@@ -1,7 +1,4 @@
-import Button from './components/Button.vue'
-import SecondButton from './components/SecondButton.vue'
+import { createApp } from 'vue'
+import App from './App.vue'
 
-export default {
-  Button,
-  SecondButton,
-}
+createApp(App).mount('#app')

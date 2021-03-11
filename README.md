@@ -1,24 +1,27 @@
 # vue-components-lib
 
-## Project setup
+## Install
+
 ```
-npm install
+npm install @mnho/vue-components-lib
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Basic Usage
 
-### Compiles and minifies for production
 ```
-npm run build
-```
+<template>
+  <SecondButton></SecondButton>
+</template>
 
-### Lints and fixes files
-```
-npm run lint
-```
+<script>
+import SecondButton from './components/SecondButton.vue'
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+export default {
+  name: 'App',
+  components: {
+    SecondButton
+  }
+}
+</script>
+
+```
